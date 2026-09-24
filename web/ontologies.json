@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Manufacturing (core)",
+    "url": "manufacturing/",
+    "description": "Core ontology for manufacturing resources and operations, based on ISA-95.",
+    "maintainer": "Arno Claeys, ISyE",
+    "maintainerUrl": "https://w3id.org/isye"
+  }
+]

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>License &amp; extension policy &middot; FOMO</title>
+    <meta
+      name="description"
+      content="License (CC BY 4.0) and extension policy for FOMO, the Federated Open Manufacturing Ontologies."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self' https://use.typekit.net https://p.typekit.net; font-src https://use.typekit.net https://p.typekit.net data:; img-src 'self' data:; base-uri 'none'; form-action 'none'"
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/zhb4tai.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/license.css" />
+  </head>
+  <body>
+    <aside class="draft-notice" role="note" aria-label="Draft notice">
+      <span class="tag">Draft</span>
+      <p>
+        This is a <strong>temporary draft</strong> of the FOMO website. We are
+        still <strong>reviewing</strong> the license and extension policy
+        below, and they may change before we publish the ontologies.
+      </p>
+    </aside>
+    <main>
+      <a class="logo" href="https://w3id.org/isye">
+        <img
+          src="../assets/img/logo.svg"
+          alt="ISyE, Ghent University"
+          width="360"
+          height="90"
+        />
+      </a>
+      <a class="back" href="../">&larr; Back to FOMO</a>
+      <h1>License &amp; extension policy</h1>
+      <p class="lede">
+        FOMO (Federated Open Manufacturing Ontologies) is a modular network of
+        ontologies. The FOMO architecture and every published module are
+        available under the
+        <a href="https://creativecommons.org/licenses/by/4.0/"
+          >Creative Commons Attribution 4.0 International License (CC BY 4.0)</a
+        >.
+      </p>
+      <p class="badge">CC BY 4.0</p>
+      <h2>License</h2>
+      <h3>You are free to</h3>
+      <ul>
+        <li>
+          <strong>Share</strong> &mdash; copy and redistribute the material in
+          any medium or format for any purpose, even commercially.
+        </li>
+        <li>
+          <strong>Adapt</strong> &mdash; remix, transform, and build upon the
+          material for any purpose, even commercially.
+        </li>
+      </ul>
+
+      <h3>Under the following terms</h3>
+      <ul>
+        <li>
+          <strong>Attribution</strong> &mdash; You must give appropriate credit,
+          provide a link to the license, and indicate if changes were made. You
+          may do so in any reasonable manner, but not in any way that suggests
+          the licensor endorses you or your use.
+        </li>
+        <li>
+          <strong>No additional restrictions</strong> &mdash; You may not apply
+          legal terms or technological measures that legally restrict others
+          from doing anything the license permits.
+        </li>
+      </ul>
+      <p class="note">
+        This is a summary. The binding text is the
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode"
+          >full legal code</a
+        >; Creative Commons also publishes a
+        <a href="https://creativecommons.org/licenses/by/4.0/"
+          >plain-language deed</a
+        >.
+      </p>
+
+      <h3>How to attribute</h3>
+      <p>
+        Credit each module you use and cite its own URI. The general form is:
+      </p>
+      <blockquote>
+        &ldquo;FOMO <em>&lt;module&gt;</em> ontology, &copy; FlandersMake@UGent
+        &ndash; ISyE, Ghent University, licensed under CC BY 4.0.
+        <code>https://w3id.org/fomo/&lt;module&gt;</code>&rdquo;
+      </blockquote>
+      <p class="note">
+        Each module&rsquo;s specification and its ontology (<code>.ttl</code>)
+        file contain the exact attribution text for that module. Copy it from
+        there when you can.
+      </p>
+
+      <h3>Scope, naming, and extensions</h3>
+      <p>
+        This license covers the ontology artifacts and their documentation. It
+        does <strong>not</strong> cover the MKS software stack (triplestore,
+        tooling, mapping pipelines), which has its own terms.
+      </p>
+      <p>
+        &ldquo;FOMO&rdquo;, &ldquo;Federated Open Manufacturing
+        Ontologies&rdquo;, and &ldquo;MKS&rdquo; are names of Ghent University.
+        CC BY 4.0 gives you no right to use these names or the related logos
+        beyond what reasonable attribution requires, and no use may imply
+        endorsement. If you redistribute or modify a copy, mark it clearly as
+        changed and don&rsquo;t present it as the official FOMO.
+      </p>
+      <p>
+        Every canonical module lives under the
+        <code>https://w3id.org/fomo</code> namespace, at its own URI
+        (<code>https://w3id.org/fomo/&lt;module&gt;</code>). Don&rsquo;t edit
+        the published ontologies to extend them. Create a new ontology in your
+        own namespace instead, and pull in the FOMO modules you need with
+        <code>owl:imports</code> (see the extension policy below).
+      </p>
+
+      <h3>Disclaimer of warranty</h3>
+      <p class="note">
+        This material is provided by the copyright holder and contributors
+        &ldquo;as is&rdquo;, and any express or implied warranties, including,
+        but not limited to, the implied warranties of merchantability and fitness
+        for a particular purpose, are disclaimed. In no event shall the copyright
+        holder or contributors be liable for any direct, indirect, incidental,
+        special, exemplary, or consequential damages however caused and on any
+        theory of liability, whether in contract, strict liability, or tort
+        (including negligence or otherwise) arising in any way out of the use of
+        this material, even if advised of the possibility of such damage.
+      </p>
+
+      <h3>Third-party notices</h3>
+      <p class="note">
+        Some modules build on third-party standards. Each module&rsquo;s
+        specification lists the notices that apply to it.
+      </p>
+
+      <h2>Extension policy</h2>
+      <p>
+        You extend FOMO
+        <strong>by referencing it, not by modifying it</strong>. That way anyone
+        can build on the ontologies while the canonical versions stay stable and
+        authoritative.
+      </p>
+
+      <h3>Rules</h3>
+      <ol>
+        <li>
+          <strong>Don&rsquo;t modify the published ontologies in place.</strong>
+          Only FlandersMake@UGent &ndash; ISyE maintains the files under the
+          <code>https://w3id.org/fomo/&hellip;</code> module namespaces, and a
+          FOMO IRI always resolves to the official, versioned definition.
+        </li>
+        <li>
+          <strong>Extend by creating your own ontology.</strong> An extension
+          must:
+          <ul>
+            <li>
+              live in <strong>its own namespace</strong>, outside every
+              <code>https://w3id.org/fomo/&lt;module&gt;#</code> namespace;
+            </li>
+            <li>
+              import the FOMO modules it builds on with
+              <code>owl:imports</code>, e.g.
+              <pre><code>&lt;https://example.org/my-extension&gt;
+    a owl:Ontology ;
+    owl:imports &lt;https://w3id.org/fomo/manufacturing&gt; .</code></pre>
+            </li>
+            <li>
+              add new classes and properties
+              <strong>under your own namespace</strong>, and relate them to FOMO
+              terms with <code>rdfs:subClassOf</code>,
+              <code>rdfs:subPropertyOf</code>, <code>owl:equivalentClass</code>,
+              <code>skos:broader</code> and similar properties.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong
+            >Never mint or redefine terms in a
+            <code>w3id.org/fomo</code> module namespace</strong
+          >
+          (e.g. <code>https://w3id.org/fomo/manufacturing#</code>) that you
+          don&rsquo;t control. That is namespace squatting, and it isn&rsquo;t
+          allowed.
+        </li>
+        <li>
+          <strong>Pin a version</strong> if you need reproducible results, by
+          importing a version IRI such as
+          <code>owl:imports &lt;https://w3id.org/fomo/manufacturing/0.2.0&gt;</code>.
+        </li>
+        <li>
+          <strong>Attribute.</strong> Any use or extension must credit FOMO as
+          the license above describes. Mark modified copies as changed, and
+          don&rsquo;t present them as the official FOMO or suggest that
+          FlandersMake@UGent &ndash; ISyE endorses them.
+        </li>
+      </ol>
+
+      <h3>Contributing to FOMO itself</h3>
+      <p>
+        Found a problem in a canonical ontology, or want to propose a change?
+        Email <a href="mailto:arno.claeys@ugent.be">arno.claeys@ugent.be</a>.
+      </p>
+
+      <h3>Why this model</h3>
+      <p>
+        Only the maintainers control what resolves under
+        <code>w3id.org/fomo</code>, so nobody else can change the official
+        ontologies. An extension that imports FOMO instead of forking it stays
+        compatible with other FOMO-based data and tools, and its version IRI
+        records which release it was built against.
+      </p>
+
+      <footer>
+        <p>
+          Questions about licensing or extensions? Contact
+          <a href="mailto:jeroen.demaeyer@ugent.be">jeroen.demaeyer@ugent.be</a>.
+        </p>
+      </footer>
+    </main>
+    <footer class="copyright">
+      <p>&copy; 2026 FlandersMake@UGent &ndash; ISyE, Ghent University</p>
+    </footer>
+  </body>
+</html>

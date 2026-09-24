@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FOMO: Federated Open Manufacturing Ontologies</title>
+    <meta
+      name="description"
+      content="FOMO (Federated Open Manufacturing Ontologies) is a modular network of open ontologies for manufacturing, built around a core ontology based on ISA-95."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FOMO" />
+    <meta
+      property="og:title"
+      content="FOMO: Federated Open Manufacturing Ontologies"
+    />
+    <meta
+      property="og:description"
+      content="A modular network of open ontologies for manufacturing, built around a core ontology based on ISA-95."
+    />
+    <meta property="og:url" content="https://w3id.org/fomo" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self' https://use.typekit.net https://p.typekit.net; font-src https://use.typekit.net https://p.typekit.net data:; img-src 'self' data:; base-uri 'none'; form-action 'none'"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/zhb4tai.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <script src="assets/js/pagination.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@id": "https://w3id.org/fomo",
+        "@type": "CollectionPage",
+        "name": "Federated Open Manufacturing Ontologies",
+        "alternateName": "FOMO",
+        "url": "https://w3id.org/fomo",
+        "inLanguage": "en",
+        "description": "A modular network of open ontologies that gives manufacturing systems a shared vocabulary, built around a core ontology based on ISA-95.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "FlandersMake@UGent – ISyE",
+          "url": "https://w3id.org/isye",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sint-Martens-Latemlaan 2B",
+            "postalCode": "8500",
+            "addressLocality": "Kortrijk",
+            "addressCountry": "BE"
+          }
+        },
+        "creator": {
+          "@type": "Person",
+          "name": "Arno Claeys",
+          "email": "mailto:arno.claeys@ugent.be",
+          "sameAs": "https://orcid.org/0000-0002-7853-8842",
+          "affiliation": [
+            {
+              "@type": "Organization",
+              "name": "FlandersMake@UGent – ISyE",
+              "url": "https://w3id.org/isye"
+            },
+            {
+              "@type": "Organization",
+              "name": "Ghent University",
+              "url": "https://www.ugent.be/"
+            }
+          ]
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <aside class="draft-notice" role="note" aria-label="Draft notice">
+      <span class="tag">Draft</span>
+      <p>
+        This is a <strong>temporary draft</strong> of the FOMO website.
+        Everything on it, including the
+        <a href="license/">license and extension policy</a>, is still
+        <strong>under review</strong> and may change. We will publish the
+        ontologies later, so the ontology links may not resolve yet.
+      </p>
+    </aside>
+    <main>
+      <a class="logo" href="https://w3id.org/isye">
+        <img
+          src="assets/img/logo.svg"
+          alt="ISyE, Ghent University"
+          width="360"
+          height="90"
+        />
+      </a>
+      <h1 class="title">
+        <span class="wordmark">FOMO</span>
+        <span class="expansion">Federated Open Manufacturing Ontologies</span>
+      </h1>
+      <div class="intro">
+        <p>
+          FOMO gives manufacturing software a
+          <strong>shared vocabulary</strong>. It is a network of open ontologies
+          built around one core
+          <a href="https://w3id.org/fomo/manufacturing">manufacturing ontology</a>,
+          which follows <strong>ISA-95</strong> to describe resources and
+          operations. If two systems use the same terms, you can move data
+          between them and reason over a whole process without writing a new
+          mapping for every tool.
+        </p>
+        <p>
+          The network is <strong>federated</strong>: every ontology is a
+          separate module with its own URI and a named maintainer, and they all
+          connect through the core. It is also <strong>open</strong>. You can
+          reuse and extend any of it under
+          <a href="license/">CC BY 4.0</a>.
+        </p>
+        <p>
+          <a href="https://w3id.org/isye">FlandersMake@UGent &ndash; ISyE</a>, a
+          <a href="https://www.flandersmake.be/en">Flanders Make</a> core lab at
+          <a href="https://www.ugent.be/en">Ghent University</a>, develops the
+          FOMO architecture and maintains the core ontology.
+        </p>
+      </div>
+      <h2 class="label" id="ontologies">Ontologies</h2>
+      <table aria-labelledby="ontologies">
+        <thead>
+          <tr>
+            <th scope="col">Ontology</th>
+            <th scope="col">Description</th>
+            <th scope="col">Maintainer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">
+              <a href="https://w3id.org/fomo/manufacturing">Manufacturing (core)</a>
+            </td>
+            <td class="desc">
+              Core ontology for manufacturing resources and operations, based on
+              <span class="nowrap">ISA-95</span>.
+            </td>
+            <td class="maintainer">
+              <a href="mailto:arno.claeys@ugent.be">Arno Claeys</a>,
+              <a href="https://w3id.org/isye">ISyE</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <footer>
+        <h2 class="label">Contact</h2>
+        <address>
+          <div class="people">
+            <p class="person">
+              <a href="mailto:arno.claeys@ugent.be">Arno Claeys</a>
+              <span class="profiles">
+                <a href="https://orcid.org/0000-0002-7853-8842" title="ORCID"
+                  ><img
+                    src="assets/img/orcid.svg"
+                    alt="Arno Claeys on ORCID"
+                    width="16"
+                    height="16"
+                /></a>
+                <a href="https://www.linkedin.com/in/arno-claeys-39298b42/" title="LinkedIn"
+                  ><img
+                    src="assets/img/linkedin.svg"
+                    alt="Arno Claeys on LinkedIn"
+                    width="14"
+                    height="16"
+                /></a>
+              </span>
+              <span class="role"
+                >Postdoctoral researcher, FlandersMake@UGent &ndash; ISyE</span
+              >
+            </p>
+            <p class="person">
+              <a href="mailto:johannes.cottyn@ugent.be">Johannes Cottyn</a>
+              <span class="profiles">
+                <a href="https://orcid.org/0000-0002-1668-3331" title="ORCID"
+                  ><img
+                    src="assets/img/orcid.svg"
+                    alt="Johannes Cottyn on ORCID"
+                    width="16"
+                    height="16"
+                /></a>
+                <a href="https://www.linkedin.com/in/johannes-cottyn-87520827/" title="LinkedIn"
+                  ><img
+                    src="assets/img/linkedin.svg"
+                    alt="Johannes Cottyn on LinkedIn"
+                    width="14"
+                    height="16"
+                /></a>
+              </span>
+              <span class="role"
+                >Associate professor and competence domain lead,
+                FlandersMake@UGent &ndash; ISyE</span
+              >
+            </p>
+          </div>
+          <div class="org-details">
+            <p class="org-name">FlandersMake@UGent &ndash; ISyE</p>
+            <p>Sint-Martens-Latemlaan 2B</p>
+            <p>8500 Kortrijk, Belgium</p>
+            <p><a href="tel:+3256241221">+32 (0)56 24 12 21</a></p>
+            <p><a href="mailto:isye@ugent.be">isye@ugent.be</a></p>
+          </div>
+        </address>
+      </footer>
+    </main>
+    <footer class="copyright">
+      <p>
+        &copy; 2026 FlandersMake@UGent &ndash; ISyE, Ghent University &middot;
+        <a href="license/">License &amp; extension policy</a>
+      </p>
+    </footer>
+  </body>
+</html>
